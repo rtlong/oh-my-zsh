@@ -9,16 +9,28 @@ alias -- -='cd -'
 # Super user
 alias _='sudo'
 
-#alias g='grep -in'
+alias gr='grep -in'
 
 # Show history
 alias history='fc -l 1'
 
 # List direcory contents
-alias lsa='ls -lah'
-alias l='ls -la'
-alias ll='ls -l'
-alias sl=ls # often screw this up
+alias l='ls -lh'
+alias ll='ls -lFa'
+alias lh='ls -lFah'
 
 alias afind='ack-grep -il'
 
+alias pselF='sudo ps -elF'
+alias psgrep='sudo ps -elF | egrep -i'
+
+alias disk-space='df -h | sort -k 4 -h'
+
+alias Projects='cd ~/Projects'
+alias cd-sj='cd /home/ryan/Projects/social-jobs/'
+alias cd-tm='cd /home/ryan/Projects/Trustmaster/'
+alias cd-lisa='cd /home/ryan/Projects/Dolan/lisa'
+
+alias take-own='chown -Rc ryan:ryan '
+
+alias make-executable='sudo chmod -Rc a+x'
