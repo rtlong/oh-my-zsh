@@ -9,7 +9,7 @@
 
 if [[ "$TERM" != "dumb" ]] && [[ "$DISABLE_LS_COLORS" != "true" ]]; then
     PROMPT='
-${time} %{$fg_bold[cyan]%}%n@%m%{$reset_color%}:%{$fg_bold[blue]%}%~%b$(git_prompt_info) %{$fg_bold[red]%}$(~/.rvm/bin/rvm-prompt i v g) %b%{$fg[green]%}%U%l%u %{$fg[magenta]%}%jJ %{$reset_color%}
+${time} %{$fg_bold[cyan]%}%n@%m%{$reset_color%}:%{$fg_bold[blue]%}%~%b$(git_prompt_info) %{$fg_bold[red]%}$($rvm_home/bin/rvm-prompt i v g) %b%{$fg[green]%}%U%l%u %{$fg[magenta]%}%jJ %{$reset_color%}
 %B%i!%! %#%b '
 
     # local time, color coded by last return code
