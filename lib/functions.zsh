@@ -20,10 +20,6 @@ function watch-logs () {
   sudo tail --follow=name --retry --bytes=0 ${=files}
 }
 
-function git () {
-  hub "$@"
-}
-
 function search-logs () {
   sudo zgrep $* /var/log/* /var/log/*/* /var/log/*/*/*
 }

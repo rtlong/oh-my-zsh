@@ -5,6 +5,7 @@ alias po='popd'
 # Basic directory operations
 alias ...='cd ../..'
 alias -- -='cd -'
+alias up='cd ..'
 
 # Super user
 alias _='sudo'
@@ -34,3 +35,5 @@ alias cd-lisa='cd /home/ryan/Projects/Dolan/lisa'
 alias take-own='chown -Rc ryan:ryan '
 
 alias make-executable='sudo chmod -Rc a+x'
+
+

@@ -29,9 +29,27 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rails3 bundler rake knife redis-cli rvm heroku vagrant sublime command-not-found debian)
+plugins=(
+  git
+  git-flow
+  rails3
+  rake
+  knife
+  redis-cli
+  rvm
+  heroku
+  vagrant
+  sublime
+  command-not-found
+  debian
+  bundler
+)
+disabled_plugins=(
+)
 
 source $ZSH/oh-my-zsh.sh
+
+unsetopt correct_all
 
 # Customize to your needs...
 
@@ -60,3 +78,5 @@ export EDITOR="/home/ryan/.bin/sublime_text -w"
 
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
