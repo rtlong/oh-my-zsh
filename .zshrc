@@ -66,10 +66,14 @@ if [ -d "$HOME/.bin" ] ; then
   export PATH="$HOME/.bin:$PATH"
 fi
 
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
 # Set the bluetooth radio address of my Wii Remote. Used by wminput
 export WIIMOTE_BADDR="00:1E:35:3F:0F:7E"
 export JRUBY_OPTS='--1.9 -J-Dfile.encoding=utf8'
 export PYTHONSTARTUP="$HOME/.pythonrc"
+export STATSMIX_API_KEY="25cd6dfd2213c0e32bb8"
 
 export EDITOR="/home/ryan/.bin/sublime_text -w"
 
@@ -78,5 +82,3 @@ export EDITOR="/home/ryan/.bin/sublime_text -w"
 
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
